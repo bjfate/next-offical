@@ -2,12 +2,13 @@
  * @Author: huoguangxuan
  * @Date: 2025-02-12 14:38:19
  * @LastEditors: huoguangxuan 117622536@qq.com
- * @LastEditTime: 2025-02-12 14:38:36
- * @FilePath: \nextjs-dashboard\app\dashboard\layout.tsx
+ * @LastEditTime: 2025-02-13 22:17:40
+ * @FilePath: \next-offical\app\dashboard\layout.tsx
  * @Description: 
  * 
  * Copyright (c) 2025 by ${git_name_email}, All Rights Reserved. 
  */
+export const experimental_ppr = true;
 import SideNav from '@/app/ui/dashboard/sidenav';
  
 export default function Layout({ children }: { children: React.ReactNode }) {
