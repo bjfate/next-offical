@@ -2,18 +2,24 @@
  * @Author: huoguangxuan
  * @Date: 2025-02-11 14:14:20
  * @LastEditors: huoguangxuan 117622536@qq.com
- * @LastEditTime: 2025-02-21 10:58:50
+ * @LastEditTime: 2025-02-21 17:06:25
  * @FilePath: \nextjs-dashboard\app\page.tsx
  * @Description: 
  * 
  * Copyright (c) 2025 by ${git_name_email}, All Rights Reserved. 
  */
+import { Metadata } from 'next';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import { irish_grover } from '@/app/ui/fonts';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Acme Dashboard',
+  description: 'Welcome to Acme Dashboard, the example for the Next.js Learn Course brought to you by Vercel.',
+};
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">

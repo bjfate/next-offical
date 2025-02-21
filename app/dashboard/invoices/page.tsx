@@ -2,10 +2,16 @@
  * @Author: huoguangxuan
  * @Date: 2025-02-13 20:06:13
  * @LastEditors: huoguangxuan 117622536@qq.com
- * @LastEditTime: 2025-02-15 14:14:35
- * @FilePath: \next-offical\app\dashboard\invoices\page.tsx
+ * @LastEditTime: 2025-02-21 16:56:40
+ * @FilePath: \nextjs-dashboard\app\dashboard\invoices\page.tsx
  * @Description: 
  */
+
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
 import Table from '@/app/ui/invoices/table';

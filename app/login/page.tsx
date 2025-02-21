@@ -2,14 +2,19 @@
  * @Author: huoguangxuan
  * @Date: 2025-02-21 15:02:29
  * @LastEditors: huoguangxuan 117622536@qq.com
- * @LastEditTime: 2025-02-21 15:02:44
+ * @LastEditTime: 2025-02-21 16:57:36
  * @FilePath: \nextjs-dashboard\app\login\page.tsx
  * @Description: 
  */
 import AcmeLogo from '@/app/ui/acme-logo';
 import LoginForm from '@/app/ui/login-form';
 import { Suspense } from 'react';
- 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Login',
+    description: 'Login page of Acme Corporation',
+};
 export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
