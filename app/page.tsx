@@ -2,7 +2,7 @@
  * @Author: huoguangxuan
  * @Date: 2025-02-11 14:14:20
  * @LastEditors: huoguangxuan 117622536@qq.com
- * @LastEditTime: 2025-02-12 14:18:28
+ * @LastEditTime: 2025-02-21 10:58:50
  * @FilePath: \nextjs-dashboard\app\page.tsx
  * @Description: 
  * 
@@ -12,7 +12,6 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
-import variables from '@/app/ui/variables.module.scss';
 import { irish_grover } from '@/app/ui/fonts';
 import Image from 'next/image';
 export default function Page() {
