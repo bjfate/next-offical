@@ -2,8 +2,8 @@
  * @Author: huoguangxuan
  * @Date: 2025-02-15 14:40:38
  * @LastEditors: huoguangxuan 117622536@qq.com
- * @LastEditTime: 2025-02-21 16:02:38
- * @FilePath: \nextjs-dashboard\app\lib\actions.ts
+ * @LastEditTime: 2025-02-26 22:11:13
+ * @FilePath: \next-offical\app\lib\actions.ts
  * @Description: 
  */
 'use server';
@@ -28,9 +28,9 @@ const CreateInvoice = FormSchema.omit({ id: true, date: true });
 const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 export type State = {
   errors?: {
-    customerId?: string[];
-    amount?: string[];
-    status?: string[];
+    fieldErrors: {
+      [key: string]: string[];
+    };
   };
   message?: string | null;
 };
@@ -41,6 +41,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
       status: formData.get('status'),
     });
     if(!validatedFields.success){
+      console.log(validatedFields.error.flatten());
       return {
         errors: validatedFields.error.flatten(),
         message: 'Missing Fields. Failed to Create Invoice.',
